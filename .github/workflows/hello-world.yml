@@ -1,0 +1,15 @@
+name: Test hello-world
+on:
+  push:
+    branches:
+      - 'hello-world'
+  pull_request:
+    branches:
+      - 'hello-world'
+jobs:
+  hello-world:
+    runs-on:
+      - ubuntu-latest
+    steps:
+      - name: Hello world
+        uses: echo "Hello world"
